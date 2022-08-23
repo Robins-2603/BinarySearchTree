@@ -1,7 +1,7 @@
 package com.BinarySearchTree;
 
-/* 2. Ability to create the binary tree shown in the figure
- *    Check if all are added with using size method in Binary Tree
+/*  3. Ability to search 63 in the Binary Tree
+ *    Implement Search method and recursively search Left or Right Nodes to find 63
  */
 
 public class MainBst {
@@ -29,6 +29,17 @@ public class MainBst {
         root = bst.insert(root, 67);
 
         bst.print(root);
+
+        // if condition is true then 1st print o/p is boolean type coz this is boolean method
+        System.out.println(bst.nodePresent(root, 63));
+        /*
+         * if else statement is used if condition is true then print 63 is present is binary tree
+         * if condition false then print 63 is not present in binary tree.
+         */
+        if(root != null)
+            System.out.println("\nElement 63 is present in the binary tree");
+        else
+            System.out.println("\nElement 63 is not present in the binary tree");
 
     }
 }
